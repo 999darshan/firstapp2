@@ -12,7 +12,7 @@ class dart extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          'DART',
+          'Darshan Chauhan',
           style: TextStyle(color: Colors.black, fontSize: 17, letterSpacing: 3),
         ),
         backgroundColor: Colors.cyan,
