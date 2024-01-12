@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
 class WelcomePage extends StatefulWidget {
   @override
   _WelcomePageState createState() => _WelcomePageState();
@@ -62,9 +63,9 @@ class _WelcomePageState extends State<WelcomePage>
                     'Welcome to Flutter',
                     'With Dart',
                   ],
-                  textStyle: TextStyle(fontSize: 20.0,color: Colors.white),
+                  textStyle: TextStyle(fontSize: 20.0, color: Colors.white),
                 ),
-                    SizedBox(height: 20.0),
+                SizedBox(height: 20.0),
                 Divider(
                   thickness: 3,
                   endIndent: 30,
@@ -73,11 +74,16 @@ class _WelcomePageState extends State<WelcomePage>
                 ),
                 SizedBox(height: 30),
                 ElevatedButton(
-                  onPressed: () {
-                    Get.to(zzz());
-                  },
-                  child: Shimmer.fromColors(child: Text("Get Started",style: TextStyle(color: Colors.black),), baseColor: Colors.transparent, highlightColor: Colors.grey)
-                ),
+                    onPressed: () {
+                      Get.to(zzz());
+                    },
+                    child: Shimmer.fromColors(
+                        child: Text(
+                          "Get Started",
+                          style: TextStyle(color: Colors.black),
+                        ),
+                        baseColor: Colors.transparent,
+                        highlightColor: Colors.grey)),
                 SizedBox(height: 30.0),
                 Divider(
                   thickness: 3,
@@ -99,5 +105,3 @@ class _WelcomePageState extends State<WelcomePage>
     super.dispose();
   }
 }
-
-

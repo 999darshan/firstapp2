@@ -29,6 +29,7 @@ import 'package:firstapp/TEXTFIELD.dart';
 import 'package:firstapp/TIMEPICKER.dart';
 import 'package:firstapp/WRAP.dart';
 import 'package:flutter/material.dart';
+import 'package:shimmer/shimmer.dart';
 
 class flutter extends StatelessWidget {
   @override
@@ -56,23 +57,26 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => mycolumnrow()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => mycolumnrow()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '1 : Column & Row',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -81,23 +85,26 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => mytextfield()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => mytextfield()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '2 : Textfield',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -106,21 +113,24 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => MyForm()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => MyForm()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
-                        '3 : Formfield',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        '3 : FormField',
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -129,21 +139,24 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => mybutton()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => mybutton()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '4 : Button',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -152,21 +165,24 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => mynavi()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => mynavi()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
-                        '5 : Navigation',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        '5 : Naviggation',
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -175,23 +191,26 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => myRadioapp()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => myRadioapp()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '6 : Radio',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -200,23 +219,26 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => mydrawerapp()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => mydrawerapp()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '7 : Drawer',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -225,21 +247,24 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => myyapp()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => myyapp()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '8 : Appbar',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -248,21 +273,24 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => mybox()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => mybox()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '9 : Checkbox',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -271,21 +299,24 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => myslider()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => myslider()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '10 : Slider',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -294,21 +325,24 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => mylistv()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => mylistv()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '11 : Listview',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -317,23 +351,26 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => mySimpleCard()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => mySimpleCard()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '12 : Card',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -342,21 +379,24 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => myalrt()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => myalrt()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
-                        '13 : AlertBox',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        '13 : Alertbox',
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -365,21 +405,24 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => mypopupp()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => mypopupp()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '14 : Popup Menu',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -388,23 +431,26 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => mySliverGridViewDemo()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => mySliverGridViewDemo()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '15 : Sliver Grid',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -413,21 +459,24 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => mydate()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => mydate()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '16 : Date Picker',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -436,23 +485,26 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => myTimePickerDemo()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => myTimePickerDemo()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '17 : Time Picker',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -461,21 +513,24 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => mysnack()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => mysnack()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '18 : Snackbar',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -484,23 +539,26 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => myStackDemo()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => myStackDemo()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '19 : Stack',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -509,23 +567,26 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => myWrapDemo()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => myWrapDemo()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '20 : Wrap',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -534,23 +595,26 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => mygridview()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => mygridview()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '21 : GridView',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -559,23 +623,26 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => mySwitchDemo()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => mySwitchDemo()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '22 : Switch',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -584,23 +651,26 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => myyflipcard()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => myyflipcard()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '23 : FlipCard',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -609,21 +679,24 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => myimage()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => myimage()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
-                        '24 : Images',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        '24 : Image',
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -632,21 +705,24 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => mylottie()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => mylottie()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '25 : Lottie Files',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -655,21 +731,24 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => anni()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => anni()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
-                        '26 : Animated switch',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        '26 : Animated Switch',
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -678,21 +757,24 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => myclip()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => myclip()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '27 : Clip React',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -701,46 +783,54 @@ class flutter extends StatelessWidget {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => myflot()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => myflot()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '28 : Floating Button',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
-                   SizedBox(
+                SizedBox(
                   height: 20,
                 ),
-                 SizedBox(
+                SizedBox(
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal.shade800,
-                        foregroundColor: Colors.white,
-                      ),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Gesture_Detector()));
-                      },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal.shade800,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Gesture_Detector()));
+                    },
+                    child: Shimmer.fromColors(
+                      direction: ShimmerDirection.rtl,
                       child: Text(
                         '29 : Gesture Detector',
-                        style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 3,
-                        ),
-                      )),
+                        style: TextStyle(letterSpacing: 3, fontSize: 13),
+                      ),
+                      baseColor: Colors.white,
+                      highlightColor: Colors.grey,
+                    ),
+                  ),
                 ),
-                   SizedBox(
+                SizedBox(
                   height: 20,
                 ),
                 //  SizedBox(
